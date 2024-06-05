@@ -8,9 +8,23 @@
     .example-wrapper code { background: yellow; padding: 2px 6px; }
 </style>
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! </h1>
-</div>
+    <h4>accueil.html.twig</h4>
+    <p>Ceci est la page d'accueil.</p>
+    
+    {% if user %}
+        <p>Bienvenue, {{ user.0 }}!</p>
+    {% else %}
+        <p>Bienvenue, invité!</p>
+    {% endif %}
+
+    {# <ul>
+    {% for item in items %}
+        <li>{{ item.1 }}</li>
+    {% endfor %}
+    </ul> #}
+
+    {# {% include 'partials/footer.html.twig' %} #}
+
 {% endblock %}
 
 

@@ -15,9 +15,12 @@ class AccueilController extends AbstractController
     public function accueil(): Response
     {
         
-        return $this->render('accueil/accueil.html.twig', [
-            'controller_name' => 'Yes Papa',
-            "www" =>"Mamboo"
+        $user = ["Patience", "Kori"];
+        $items = ["Hehe", "Ngaha"];
+        return $this->render("accueil/accueil.html.twig", [
+            "koko_name" => 'Yes papa',
+            "user" => $user,
+            "items" => $items
         ]);
     }
    
