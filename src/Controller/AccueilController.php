@@ -15,12 +15,22 @@ class AccueilController extends AbstractController
      */
     public function accueil(): Response
     {
-        $user = ["Patience", "Kori"];
+        $user = ["Patience", "Kori"];   
         $items = ["Hehe", "Ngaha"];
         return $this->render("accueil/accueil.html.twig", [
             "koko_name" => 'Yes papa',
             "user" => $user,
             "items" => $items
+        ]);
+    }
+
+    /**
+     * @Route("/categorie", name="app_categorie")
+     */
+    public function categorie(): Response
+    {
+        return $this->render("categorie/categorie.html.twig", [
+            "hewe" => "Page Categorie"
         ]);
     }
    

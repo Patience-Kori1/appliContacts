@@ -9,19 +9,28 @@
 </style>
 
     <h4>accueil.html.twig</h4>
+
     <p>Ceci est la page d'accueil.</p>
     
     {% if user %}
-        <p>Bienvenue, {{ user.0 }}!</p>
+
+        <p> Bienvenue, {{ user.0 | upper }} ! Koribirama est partie voir les gens {{items.1 ~ items.0}} </p>
+
+        Koribirama Patience
+
     {% else %}
         <p>Bienvenue, invité!</p>
     {% endif %}
 
-    {# <ul>
+    <ol>
+
     {% for item in items %}
-        <li>{{ item.1 }}</li>
+
+        <li>{{item}}</li>
+
     {% endfor %}
-    </ul> #}
+
+    </ol>
 
     {# {% include 'partials/footer.html.twig' %} #}
 
