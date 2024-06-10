@@ -33,7 +33,8 @@
 
     </ol>
 
-    {# {% include 'partials/footer.html.twig' %} #}
+    {% include 'alert.html.twig' with {'type': 'success', 'message': 'Votre action a réussi !'} %}
+
 
 {% endblock %}
 
