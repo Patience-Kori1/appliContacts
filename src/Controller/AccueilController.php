@@ -33,6 +33,5 @@ class AccueilController extends AbstractController
             "hewe" => "Page Categorie"
         ]);
     }
-   
     
 }

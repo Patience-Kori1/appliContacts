@@ -31,17 +31,19 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
+                
+
                 <div class="collapse navbar-collapse" id="navbarColor01">
 
                     <ul class="navbar-nav me-auto">
 
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Accueil
+                            <a class="nav-link active" href= "{{ url('app_accueil')}}">Accueil
                                 <span class="visually-hidden">(current)</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Catégories</a>
+                            <a class="nav-link active" href="{{ path('app_categorie')}}">Catégories</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" href="#">Produits</a>
