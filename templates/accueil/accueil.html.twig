@@ -14,7 +14,7 @@
     
     {% if user %}
 
-        <p> Bienvenue, {{ user.0 | upper }} ! Koribirama est partie voir les gens {{items.1 ~ items.0}} </p>
+        <p> Bienvenue, {{ user.0 | upper }} ! Il est partie voir les gens {{items.1 ~ items.0}} </p>
 
         Koribirama Patience
 
@@ -34,6 +34,11 @@
     </ol>
 
     {% include 'alert.html.twig' with {'type': 'success', 'message': 'Votre action a réussi !'} %}
+
+   
+
+   
+
 
 
 {% endblock %}
